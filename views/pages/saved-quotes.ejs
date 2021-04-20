@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partial/head.ejs')  %> 
+</head>
+<body>
+    <header>
+        <%- include('../partial/header.ejs')  %> 
+
+    </header>
+
+    <main>
+        
+        <% quotes.forEach(quote => { %>
+            <section>
+                <p>
+                    <%= quote.quote %> 
+                </p>
+                <p>
+                    <%= quote.character %> 
+                </p>
+                <img src="<%= quote.image %> " alt="">
+    
+                <p>
+                    <%= quote.characterdirection %> 
+                </p>
+    
+                <a href="/favorite-quotes/<%=quote.id  %> ">view details</a>
+
+        </section>    
+        <%}) %> 
+    </main>
+    
+</body>
+</html>

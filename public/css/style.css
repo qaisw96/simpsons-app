@@ -1,0 +1,44 @@
+body {
+    background-color: #62C8E4;
+    color: #fefb1e
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #16a085;
+    height: 75px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+section {
+    height: 300px;
+    width: 250px;
+    background-color: rgb(53, 49, 44);
+    margin: 12px;
+
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    padding: 15px;
+}
+
+ul li a , a{
+    text-decoration: none;
+    color: #fefb1e
+}
+
+img {
+    width: 200px;
+    height: 175px;
+}
